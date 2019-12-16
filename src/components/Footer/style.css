@@ -1,0 +1,15 @@
+/* Footer */
+
+.wrapper {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.textOfFooter > span {
+  font-weight: normal;
+}
+
+.textOfFooter > a {
+  text-decoration: underline;
+  font-weight: normal;
+}

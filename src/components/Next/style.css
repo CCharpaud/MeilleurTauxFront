@@ -1,0 +1,22 @@
+/* Next */
+
+.buttOfNext {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: #ff9e23;
+}
+
+.containOfNext {
+  display: flex;
+  justify-content: flex-end;
+  width: 96%;
+}
+
+.buttOfNext > li {
+  list-style-type: none;
+  font-size: 20px;
+  color: white;
+}

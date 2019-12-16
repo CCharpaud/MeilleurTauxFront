@@ -1,0 +1,11 @@
+/* Back */
+
+.containOfBack {
+  width: 96%;
+}
+
+.containOfBack > li {
+  list-style-type: none;
+  font-size: 20px;
+  text-decoration: underline;
+}
