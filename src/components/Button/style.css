@@ -11,6 +11,12 @@
   -webkit-box-shadow: 0px 2px 4px 0px rgba(92, 92, 92, 0.45);
   -moz-box-shadow: 0px 2px 4px 0px rgba(92, 92, 92, 0.45);
   box-shadow: 0px 2px 4px 0px rgba(92, 92, 92, 0.45);
+  cursor: pointer;
+}
+
+.butt:focus {
+  border: none;
+  outline: 0;
 }
 
 .butt:hover {

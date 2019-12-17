@@ -4,8 +4,9 @@ import "../Button/style.css";
 export default function Button(props) {
   return (
     <div className="wrapper">
-      <a className="butt">
-        <svg
+      <button className="butt">
+        <input type="radio" name="radio" />
+        {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           width="18"
           height="18"
@@ -17,9 +18,9 @@ export default function Button(props) {
           stroke-linejoin="arcs"
         >
           <circle cx="12" cy="12" r="10"></circle>
-        </svg>
-        <span> {props.name} </span>
-      </a>
+        </svg> */}
+        <span> {props.name}</span>
+      </button>
     </div>
   );
 }

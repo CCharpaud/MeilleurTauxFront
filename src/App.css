@@ -1,1 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+
+/* RESET */
+
+ul,
+li,
+p,
+h2,
+a {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: none;
+}

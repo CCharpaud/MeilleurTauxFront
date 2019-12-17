@@ -14,3 +14,12 @@
   font-weight: 900;
   color: #ff9f24;
 }
+
+.wrapper > img {
+  height: 30px;
+  object-fit: contain;
+}
+
+.tooltip {
+  font-size: 30px;
+}

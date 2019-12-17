@@ -5,19 +5,21 @@ import "../../App";
 /* Conponents */
 import Button from "../../components/Button";
 import Next from "../../components/Next";
+import Back from "../../components/Back";
 import ProgressBar from "../../components/ProgressBar";
 
-export default function TypeBien() {
+export default function UsageBien() {
   return (
     <div className="wrapper">
       <div className="containOfType">
-        <Button name="MAISON" />
-        <Button name="APPARTEMENT" />
+        <Button name="RÉSIDENCE PRINCIPALE" />
+        <Button name="RÉSIDENCE SECONDAIRE" />
+        <Button name="INVESTISSEMENT LOCATIF" />
       </div>
       <div className="buttOfType">
-        <span style={{ paddingLeft: "37%" }} />
-        <ProgressBar percent="0%" />
-        <Next link="etat-du-bien" />
+        <Back link="etat-du-bien" />
+        <ProgressBar percent="28%" />
+        <Next />
       </div>
     </div>
   );

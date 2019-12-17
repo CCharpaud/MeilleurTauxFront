@@ -9,7 +9,19 @@
   font-weight: normal;
 }
 
-.textOfFooter > a {
+.mentions {
   text-decoration: underline;
   font-weight: normal;
+  cursor: pointer;
+}
+
+.textOfFooter > p {
+  font-size: 12px;
+}
+
+.textOfFooter > p > span {
+  margin-left: 5px;
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
 }

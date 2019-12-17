@@ -1,1 +1,57 @@
 /* ProgressBar */
+
+.container {
+  display: flex;
+  text-align: center;
+  left: 10px;
+  width: 400px;
+}
+
+.container .progress {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.container .progressCircle {
+  /* margin: 0 auto; */
+  width: 400px;
+}
+
+.progress {
+  background: rgba(224, 224, 224, 0.986);
+  border-radius: 6px;
+}
+
+.progress-bar {
+  height: 5px;
+  border: none;
+  border-radius: 4px;
+}
+
+.progress > .progress-bar {
+  background-color: #f39c12;
+}
+
+.outsideCircle {
+  background-color: #eec482;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circlePercent {
+  background-color: #f39c12;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circlePercent > span {
+  color: white;
+}

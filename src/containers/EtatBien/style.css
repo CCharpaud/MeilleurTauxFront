@@ -1,10 +1,10 @@
-/* Type de Bien */
+/* Etat Bien */
 
-.containOfType {
+.containOfState {
   display: flex;
 }
 
-.buttOfType {
+.buttOfState {
   display: flex;
   justify-content: center;
   align-items: center;

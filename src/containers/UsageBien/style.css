@@ -1,10 +1,10 @@
-/* Type de Bien */
+/* Usage Bien */
 
-.containOfType {
+.containOfUse {
   display: flex;
 }
 
-.buttOfType {
+.buttOfUse {
   display: flex;
   justify-content: center;
   align-items: center;
