@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React /* { useState } */ from "react";
 import Cookies from "js-cookie";
 import "./style.css";
 import "../../App";
@@ -9,14 +9,14 @@ import Next from "../../components/Next";
 import Back from "../../components/Back";
 import ProgressBar from "../../components/ProgressBar";
 
-export default function UsageBien() {
-  const [choice, setChoice] = useState("");
-  Cookies.set("usage-du-bien", choice);
+export default function SituationBien() {
+  //   const [choice, setChoice] = useState("");
+  //   Cookies.set("usage-du-bien", choice);
 
   return (
     <div className="wrapper">
-      <div className="containOfType">
-        <Button
+      <div className="containOfSituationLoc">
+        {/* <Button
           name="Résidence princiaple"
           value="Residence-principale"
           id="choix1"
@@ -39,21 +39,13 @@ export default function UsageBien() {
           cat="usageDuBien"
           choice={choice}
           setChoice={setChoice}
-        />
+        /> */}
       </div>
-      {Cookies.get("usage-du-bien") === "" ? (
-        <div className="buttOfType">
-          <Back link="etat-du-bien" />
-          <ProgressBar percent="28%" />
-          <Next />
-        </div>
-      ) : (
-        <div className="buttOfType">
-          <Back link="etat-du-bien" />
-          <ProgressBar percent="28%" />
-          <Next link="situation-actuelle" />
-        </div>
-      )}
+      <div className="buttOfSituationLoc">
+        <Back link="situation-actuelle" />
+        <ProgressBar percent="56%" />
+        <Next />
+      </div>
     </div>
   );
 }

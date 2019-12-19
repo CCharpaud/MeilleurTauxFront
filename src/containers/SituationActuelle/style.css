@@ -1,0 +1,13 @@
+/* Situation Actuelle */
+
+.containOfSituation {
+  display: flex;
+}
+
+.buttOfSituation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}

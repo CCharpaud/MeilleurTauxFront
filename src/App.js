@@ -10,6 +10,8 @@ import Title from "./components/Title";
 import TypeBien from "./containers/TypeBien";
 import EtatBien from "./containers/EtatBien";
 import UsageBien from "./containers/UsageBien";
+import SituationActuelle from "./containers/SituationActuelle";
+import SituationBien from "./containers/SituationBien";
 
 // style
 import "../src/App.css";
@@ -36,13 +38,27 @@ function App() {
         <Route path="/usage-du-bien">
           <Title
             name="USAGE DU BIEN"
-            tooltip="Sélétionnez l'usage du bien que vous souhaitez faire Financers"
+            tooltip="Sélétionnez l'usage du bien que vous souhaitez faire Financer"
           />
           <UsageBien />
         </Route>
+
+        <Route path="/situation-actuelle">
+          <Title
+            name="VOTRE SITUATION ACTUELLE"
+            tooltip="Sélétionnez votre situation personnelle"
+          />
+          <SituationActuelle />
+        </Route>
+        <Route path="/ou-se-situe-le-bien">
+          <Title
+            name="OÙ SE SITUE LE BIEN À FINANCER ?"
+            // tooltip="Sélétionnez votre situation personnelle"
+          />
+          <SituationBien />
+        </Route>
+
         {/*
-        <Route path="/situation-actuelle"></Route>
-        <Route path="/ou-se-situe-le-bien"></Route>
         <Route path="/montant-de-projet"></Route>
         <Route path="/coordonnées"></Route>
         <Route path="/formulaire-termine"></Route> */}

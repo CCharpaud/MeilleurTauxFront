@@ -5,6 +5,7 @@
   text-align: center;
   left: 10px;
   width: 400px;
+  position: relative;
 }
 
 .container .progress {
@@ -40,6 +41,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: -30px;
 }
 
 .circlePercent {

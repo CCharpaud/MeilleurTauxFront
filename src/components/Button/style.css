@@ -14,45 +14,35 @@
   cursor: pointer;
 }
 
-.butt:focus {
-  border: none;
-  outline: 0;
-}
-
 .butt:hover {
   -webkit-box-shadow: 0px 2px 4px 0px #e57f00;
   -moz-box-shadow: 0px 2px 4px 0px #e57f00;
   box-shadow: 0px 2px 4px 0px #e57f00;
+  background-color: #ff9f24;
+  border-color: #ff9f24;
+  color: white;
+  border: none;
+  outline: 0;
 }
 
-.butt > span {
-  font-size: 25px;
+.wrapper > label {
+  font-size: 20px;
   font-weight: 900;
   padding-left: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
-.butt:hover {
+input {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.butt:focus-within {
+  -webkit-box-shadow: 0px 2px 4px 0px #e57f00;
+  -moz-box-shadow: 0px 2px 4px 0px #e57f00;
+  box-shadow: 0px 2px 4px 0px #e57f00;
   background-color: #ff9f24;
   border-color: #ff9f24;
   color: white;
 }
-
-/* input[type="checkbox"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-}
-
-input[type="checkbox"] {
-  border-radius: 90px;
-  height: 15px;
-  width: 15px;
-  background: #fff;
-  border: 1px solid #ccc;
-}
-
-input[type="checkbox"]:checked {
-  background: grey;
-  margin: 3px;
-  position: relative;
-} */

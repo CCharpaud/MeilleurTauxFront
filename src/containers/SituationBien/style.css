@@ -1,0 +1,13 @@
+/* Situation Bien */
+
+.containOfSituationLoc {
+  display: flex;
+}
+
+.buttOfSituationLoc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
