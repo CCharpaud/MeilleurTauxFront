@@ -1,5 +1,10 @@
 /* Usage Bien */
 
+.titleOfUse {
+  display: flex;
+  align-items: center;
+}
+
 .containOfUse {
   display: flex;
 }

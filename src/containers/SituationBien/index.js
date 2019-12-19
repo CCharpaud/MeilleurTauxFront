@@ -8,6 +8,8 @@ import Button from "../../components/Button";
 import Next from "../../components/Next";
 import Back from "../../components/Back";
 import ProgressBar from "../../components/ProgressBar";
+import Title from "../../components/Title";
+import Information from "../../components/Information";
 
 export default function SituationBien() {
   //   const [choice, setChoice] = useState("");
@@ -15,32 +17,11 @@ export default function SituationBien() {
 
   return (
     <div className="wrapper">
-      <div className="containOfSituationLoc">
-        {/* <Button
-          name="Résidence princiaple"
-          value="Residence-principale"
-          id="choix1"
-          cat="usageDuBien"
-          choice={choice}
-          setChoice={setChoice}
-        />
-        <Button
-          name="Résidence secondaire"
-          value="Residence-secondaire"
-          id="choix2"
-          cat="usageDuBien"
-          choice={choice}
-          setChoice={setChoice}
-        />
-        <Button
-          name="Investissement Locatif"
-          value="Investissement-locatif"
-          id="choix3"
-          cat="usageDuBien"
-          choice={choice}
-          setChoice={setChoice}
-        /> */}
+      <div className="titleOfSituationLoc">
+        <Title name="OÙ SE SITUE LE BIEN À FINANCER ?" />
       </div>
+
+      <div className="containOfSituationLoc"></div>
       <div className="buttOfSituationLoc">
         <Back link="situation-actuelle" />
         <ProgressBar percent="56%" />

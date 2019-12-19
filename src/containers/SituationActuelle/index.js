@@ -8,6 +8,8 @@ import Button from "../../components/Button";
 import Back from "../../components/Back";
 import Next from "../../components/Next";
 import ProgressBar from "../../components/ProgressBar";
+import Title from "../../components/Title";
+import Information from "../../components/Information";
 
 export default function SituationActuelle() {
   const [choice, setChoice] = useState("");
@@ -15,6 +17,14 @@ export default function SituationActuelle() {
 
   return (
     <div className="wrapper">
+      <div className="titleOfSituation">
+        <Title name="VOTRE SITUATION ACTUELLE" />
+        <Information
+          tooltip="Sélétionnez votre situation personnelle"
+          placement="right"
+        />
+      </div>
+
       <div className="containOfSituation">
         <Button
           name="Locataire"

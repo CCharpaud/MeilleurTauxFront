@@ -1,5 +1,10 @@
 /* Situation Actuelle */
 
+.titleOfSituation {
+  display: flex;
+  align-items: center;
+}
+
 .containOfSituation {
   display: flex;
 }

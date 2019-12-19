@@ -4,7 +4,6 @@ import React from "react";
 // conponents
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Title from "./components/Title";
 
 // containers
 import TypeBien from "./containers/TypeBien";
@@ -22,39 +21,18 @@ function App() {
       <Header />
       <Switch>
         <Route path="/type-de-bien">
-          <Title
-            name="TYPE DE BIEN"
-            tooltip="Sélectionnez le type de bien que vous souhaitez faire Financer."
-          />
           <TypeBien />
         </Route>
         <Route path="/etat-du-bien">
-          <Title
-            name="ETAT DU BIEN"
-            tooltip="Sélétionnez l'état du bien Neuf ou Ancien"
-          />
           <EtatBien />
         </Route>
         <Route path="/usage-du-bien">
-          <Title
-            name="USAGE DU BIEN"
-            tooltip="Sélétionnez l'usage du bien que vous souhaitez faire Financer"
-          />
           <UsageBien />
         </Route>
-
         <Route path="/situation-actuelle">
-          <Title
-            name="VOTRE SITUATION ACTUELLE"
-            tooltip="Sélétionnez votre situation personnelle"
-          />
           <SituationActuelle />
         </Route>
         <Route path="/ou-se-situe-le-bien">
-          <Title
-            name="OÙ SE SITUE LE BIEN À FINANCER ?"
-            // tooltip="Sélétionnez votre situation personnelle"
-          />
           <SituationBien />
         </Route>
 

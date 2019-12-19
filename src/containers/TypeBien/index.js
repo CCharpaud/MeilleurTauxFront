@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import Cookies from "js-cookie";
+import { Tooltip } from "@material-ui/core";
+
+/* Styles */
 import "./style.css";
 import "../../App";
 
@@ -7,6 +10,8 @@ import "../../App";
 import Button from "../../components/Button";
 import Next from "../../components/Next";
 import ProgressBar from "../../components/ProgressBar";
+import Title from "../../components/Title";
+import Information from "../../components/Information";
 
 export default function TypeBien() {
   const [choice, setChoice] = useState("");
@@ -14,6 +19,13 @@ export default function TypeBien() {
 
   return (
     <div className="wrapper">
+      <div className="titleOfType">
+        <Title name="TYPE DE BIEN" />
+        <Information
+          tooltip="Sélectionnez le type de bien que vous souhaitez faire Financer"
+          placement="right"
+        />
+      </div>
       <div className="containOfType">
         <Button
           name="Maison"

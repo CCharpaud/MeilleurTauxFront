@@ -1,5 +1,10 @@
 /* Etat Bien */
 
+.titleOfState {
+  display: flex;
+  align-items: center;
+}
+
 .containOfState {
   display: flex;
 }

@@ -1,5 +1,14 @@
 /* Type de Bien */
 
+.wrapper {
+  width: 90vw;
+}
+
+.titleOfType {
+  display: flex;
+  align-items: center;
+}
+
 .containOfType {
   display: flex;
 }

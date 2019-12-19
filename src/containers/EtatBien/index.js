@@ -8,6 +8,8 @@ import Button from "../../components/Button";
 import Back from "../../components/Back";
 import Next from "../../components/Next";
 import ProgressBar from "../../components/ProgressBar";
+import Title from "../../components/Title";
+import Information from "../../components/Information";
 
 export default function EtatBien() {
   const [choice, setChoice] = useState("");
@@ -15,6 +17,14 @@ export default function EtatBien() {
 
   return (
     <div className="wrapper">
+      <div className="titleOfState">
+        <Title name="ETAT DU BIEN" />
+        <Information
+          tooltip="Sélétionnez l'état du bien Neuf ou Ancien"
+          placement="right"
+        />
+      </div>
+
       <div className="containOfUse">
         <Button
           name="Ancien"

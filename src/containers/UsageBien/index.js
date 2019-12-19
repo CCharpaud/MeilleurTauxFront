@@ -8,6 +8,8 @@ import Button from "../../components/Button";
 import Next from "../../components/Next";
 import Back from "../../components/Back";
 import ProgressBar from "../../components/ProgressBar";
+import Title from "../../components/Title";
+import Information from "../../components/Information";
 
 export default function UsageBien() {
   const [choice, setChoice] = useState("");
@@ -15,7 +17,15 @@ export default function UsageBien() {
 
   return (
     <div className="wrapper">
-      <div className="containOfType">
+      <div className="titleOfUse">
+        <Title name="USAGE DU BIEN" />
+        <Information
+          tooltip="Sélétionnez l'usage du bien que vous souhaitez faire Financer"
+          placement="right"
+        />
+      </div>
+
+      <div className="containOfUse">
         <Button
           name="Résidence princiaple"
           value="Residence-principale"
@@ -42,13 +52,13 @@ export default function UsageBien() {
         />
       </div>
       {Cookies.get("usage-du-bien") === "" ? (
-        <div className="buttOfType">
+        <div className="buttOfUse">
           <Back link="etat-du-bien" />
           <ProgressBar percent="28%" />
           <Next />
         </div>
       ) : (
-        <div className="buttOfType">
+        <div className="buttOfUse">
           <Back link="etat-du-bien" />
           <ProgressBar percent="28%" />
           <Next link="situation-actuelle" />

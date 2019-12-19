@@ -1,5 +1,10 @@
 /* Situation Bien */
 
+.titleOfSituationLoc {
+  display: flex;
+  align-items: center;
+}
+
 .containOfSituationLoc {
   display: flex;
 }
@@ -10,4 +15,57 @@
   align-items: center;
   margin-top: 200px;
   margin-bottom: 100px;
+}
+
+body {
+  font-size: 16px;
+}
+input {
+  border-radius: 3px;
+  border: 1.5px solid grey;
+}
+input:focus {
+  outline-color: #acd373;
+  /*outline-style: solid;
+  /*outline-width: 2px !important;*/
+  box-shadow: 0 0 1px 1px #acd373;
+}
+ul {
+  width: 330px;
+  height: 200px;
+  list-style: none;
+  padding: 0;
+  overflow-y: scroll;
+  display: none;
+}
+li {
+  width: 100%;
+  /*cursor: pointer;*/
+}
+li:hover {
+  display: inline-block;
+  background-color: teal;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+.switch {
+  cursor: pointer;
+  background: teal;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+.switch input {
+  opacity: 0;
+}
+.switch::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: blue;
 }
