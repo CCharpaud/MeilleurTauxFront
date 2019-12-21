@@ -10,7 +10,7 @@ export default function Information(props) {
       backgroundColor: theme.palette.common.grey,
       color: "rgba(255, 255, 255, 1)",
       boxShadow: theme.shadows[1],
-      fontSize: 20
+      fontSize: 15
     }
   }))(Tooltip);
 

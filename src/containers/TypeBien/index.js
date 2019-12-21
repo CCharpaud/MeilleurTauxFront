@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Cookies from "js-cookie";
-import { Tooltip } from "@material-ui/core";
 
 /* Styles */
 import "./style.css";

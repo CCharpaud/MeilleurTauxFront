@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Cookies from "js-cookie";
 import "./style.css";
-import "../../App";
+import "../../App.css";
 
 /* Conponents */
 import Button from "../../components/Button";

@@ -12,7 +12,7 @@
 .containOfNext {
   display: flex;
   justify-content: flex-end;
-  width: 96%;
+  width: 100%;
 }
 
 .buttOfNext > li {

@@ -1,4 +1,4 @@
-/* Situation Bien  */
+/* Countries  */
 
 .titleOfSituationLoc {
   display: flex;
@@ -65,22 +65,11 @@ select::-ms-expand {
 }
 
 .dropCountries {
-  -webkit-box-shadow: 0px 2px 4px 0px #e57f00;
-  -moz-box-shadow: 0px 2px 4px 0px #e57f00;
-  box-shadow: 0px 2px 4px 0px #e57f00;
+  -webkit-box-shadow: 0px 1px 3px 2px rgba(255, 159, 36, 1);
+  -moz-box-shadow: 0px 1px 3px 2px rgba(255, 159, 36, 1);
+  box-shadow: 0px 1px 3px 2px rgba(255, 159, 36, 1);
   border-color: #ff9f24;
+  border: #ff9f24;
   text-decoration: none;
   outline: none;
-}
-
-.seconddropOfSituationLoc {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.informationDropOfSituationLoc > span {
-  display: flex;
-  padding-left: 10px;
 }
