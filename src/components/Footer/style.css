@@ -19,7 +19,7 @@
   font-size: 12px;
 }
 
-.textOfFooter > p > span {
+.textOfFooter > p > div {
   margin-left: 5px;
   font-size: 12px;
   text-decoration: underline;

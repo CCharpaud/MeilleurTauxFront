@@ -71,7 +71,6 @@ export default function Amount() {
                 }}
               />
               <span> € </span>
-              <span> {acquisitionAmount} </span>
             </div>
           </label>
         </div>
@@ -94,7 +93,6 @@ export default function Amount() {
                 }}
               />
               <span> € </span>
-              <span> {workAmount} </span>
             </div>
           </label>
         </div>

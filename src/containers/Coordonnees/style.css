@@ -1,0 +1,99 @@
+/* Coordonnees */
+
+.containOfContact {
+  /* background-color: bisque; */
+}
+
+.topOfContact {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.topOfContact > span {
+  display: flex;
+  padding: 50px;
+  width: 90px;
+  background-color: #ff9e23;
+  width: 25%;
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.topOfContact > img {
+  object-fit: contain;
+}
+
+.middleOfContact {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  height: 65px;
+}
+
+.titleOfEmailInput {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding: 10px;
+  width: 400px;
+}
+
+.titleOfEmailInput > span {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.emailInput {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 750;
+  padding-left: 50px;
+}
+
+.emailInput {
+  width: 450px;
+  height: 30px;
+  text-decoration: none;
+  outline: none;
+}
+
+input[type="email"] {
+  font-size: 24px;
+  padding-left: 12px;
+}
+
+.stamp {
+  height: 50px;
+  display: flex;
+  position: relative;
+  left: -30px;
+}
+
+.buttOfEmail {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.checkPart {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.checkPart > span {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.checkboxInput {
+  background-color: aqua;
+}

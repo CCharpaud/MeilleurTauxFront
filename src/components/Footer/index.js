@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Footer/style.css";
 
-export default function Footer() {
+export default function Footer(props) {
   const [showMentions, setShowMentions] = useState(false);
 
   return (
@@ -9,14 +9,14 @@ export default function Footer() {
       <div className="wrapper">
         <div className="textOfFooter">
           <span> * Champ obligatoire - </span>
-          <span
+          <div
             className="mentions"
             onClick={() => {
               setShowMentions(!showMentions);
             }}
           >
             Mentions Légales
-          </span>
+          </div>
           {showMentions === true ? (
             <p>
               Les informations recueillies sont traitées par le groupe
@@ -32,14 +32,14 @@ export default function Footer() {
               site. Pour plus d'information concernant le traitement de vos
               données personnelles, veuillez consulter notre politique de
               données personnelles.
-              <span
+              <div
                 className="close"
                 onClick={() => {
                   setShowMentions(false);
                 }}
               >
                 [X Fermer]
-              </span>
+              </div>
             </p>
           ) : null}
         </div>

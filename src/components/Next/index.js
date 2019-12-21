@@ -9,7 +9,7 @@ export default function Next(props) {
       <div className="containOfNext">
         <Link to={props.link}>
           <div className="buttOfNext">
-            <li> Suivant </li>
+            <li> {props.name} </li>
           </div>
         </Link>
       </div>

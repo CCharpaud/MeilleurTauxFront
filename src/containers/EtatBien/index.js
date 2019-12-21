@@ -47,13 +47,13 @@ export default function EtatBien() {
         <div className="buttOfUse">
           <Back link="type-de-bien" />
           <ProgressBar percent="14%" />
-          <Next />
+          <Next name="Suivant" />
         </div>
       ) : (
         <div className="buttOfUse">
           <Back link="type-de-bien" />
           <ProgressBar percent="14%" />
-          <Next link="usage-du-bien" />
+          <Next link="usage-du-bien" name="Suivant" />
         </div>
       )}
     </div>

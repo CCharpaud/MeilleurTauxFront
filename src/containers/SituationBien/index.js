@@ -30,13 +30,13 @@ export default function SituationBien() {
         <div className="buttOfSituationLoc">
           <Back link="situation-actuelle" />
           <ProgressBar percent="56%" />
-          <Next />
+          <Next name="Suivant" />
         </div>
       ) : (
         <div className="buttOfSituationLoc">
           <Back link="situation-actuelle" />
           <ProgressBar percent="56%" />
-          <Next link="montant-de-projet" />
+          <Next link="montant-de-projet" name="Suivant" />
         </div>
       )}
     </div>

@@ -20,11 +20,19 @@ export default function Montant() {
       <div className="containOfAmount">
         <Amount />
       </div>
-      <div className="buttOfBudget">
-        <Back link="ou-se-situe-le-bien" />
-        <ProgressBar percent="70%" />
-        <Next />
-      </div>
+      {Cookies.get("montant-client") === "undefined" ? (
+        <div className="buttOfBudget">
+          <Back link="ou-se-situe-le-bien" />
+          <ProgressBar percent="70%" />
+          <Next name="Suivant" />
+        </div>
+      ) : (
+        <div className="buttOfBudget">
+          <Back link="ou-se-situe-le-bien" />
+          <ProgressBar percent="70%" />
+          <Next link="coordonnées" name="Suivant" />
+        </div>
+      )}
     </div>
   );
 }

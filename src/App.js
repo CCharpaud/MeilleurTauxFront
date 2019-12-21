@@ -12,6 +12,8 @@ import UsageBien from "./containers/UsageBien";
 import SituationActuelle from "./containers/SituationActuelle";
 import SituationBien from "./containers/SituationBien";
 import Montant from "./containers/Montant";
+import Coordonnées from "./containers/Coordonnees";
+import Final from "./containers/Final";
 
 // style
 import "../src/App.css";
@@ -39,10 +41,12 @@ function App() {
         <Route path="/montant-de-projet">
           <Montant />
         </Route>
-
-        {/*
-        <Route path="/coordonnées"></Route>
-        <Route path="/formulaire-termine"></Route> */}
+        <Route path="/coordonnées">
+          <Coordonnées />
+        </Route>
+        <Route path="/formulaire-termine">
+          <Final />
+        </Route>
       </Switch>
       <Footer />
     </Router>

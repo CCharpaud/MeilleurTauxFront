@@ -1,0 +1,13 @@
+/* Final */
+
+/* not display mandatory information */
+
+footer span {
+  display: none;
+}
+
+/* -------  */
+
+.containOfFinal {
+  padding-bottom: 40px;
+}

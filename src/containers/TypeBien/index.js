@@ -47,13 +47,13 @@ export default function TypeBien() {
         <div className="buttOfType">
           <span style={{ paddingLeft: "40%" }} />
           <ProgressBar percent="0%" />
-          <Next />
+          <Next name="Suivant" />
         </div>
       ) : (
         <div className="buttOfType">
           <span style={{ paddingLeft: "40%" }} />
           <ProgressBar percent="0%" />
-          <Next link="etat-du-bien" />
+          <Next link="etat-du-bien" name="Suivant" />
         </div>
       )}
     </div>
