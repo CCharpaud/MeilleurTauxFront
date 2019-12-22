@@ -45,13 +45,13 @@ export default function EtatBien() {
       </div>
       {Cookies.get("etat-du-bien") === "" ? (
         <div className="buttOfUse">
-          <Back link="type-de-bien" />
+          <Back link="/" />
           <ProgressBar percent="14%" />
           <Next name="Suivant" color="rgba(192,192,192,0.3)" />
         </div>
       ) : (
         <div className="buttOfUse">
-          <Back link="type-de-bien" />
+          <Back link="/" />
           <ProgressBar percent="14%" />
           <Next link="usage-du-bien" name="Suivant" color="#ff9e23" />
         </div>

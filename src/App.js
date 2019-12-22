@@ -23,7 +23,7 @@ function App() {
     <Router>
       <Header />
       <Switch>
-        <Route path="/type-de-bien">
+        <Route path="/">
           <TypeBien />
         </Route>
         <Route path="/etat-du-bien">
