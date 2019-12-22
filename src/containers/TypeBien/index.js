@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Axios from "axios";
 import Cookies from "js-cookie";
 
 /* Styles */
@@ -14,7 +15,26 @@ import Information from "../../components/Information";
 
 export default function TypeBien() {
   const [choice, setChoice] = useState("");
+  const [token, setToken] = useState("");
   Cookies.set("type-de-bien", choice);
+
+  if (Cookies.get("token") === undefined || "undefined") {
+    Cookies.set("token", token);
+  }
+
+  /* Init new Token */
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await Axios.get("http://localhost:4000/type-de-bien");
+        setToken(response.data.token);
+        console.log(response.data);
+      } catch (error) {
+        console.log(error.message);
+      }
+    };
+    fetchData();
+  }, []);
 
   return (
     <div className="wrapper">
@@ -47,13 +67,13 @@ export default function TypeBien() {
         <div className="buttOfType">
           <span style={{ paddingLeft: "40%" }} />
           <ProgressBar percent="0%" />
-          <Next name="Suivant" />
+          <Next name="Suivant" color="rgba(192,192,192,0.3)" />
         </div>
       ) : (
         <div className="buttOfType">
           <span style={{ paddingLeft: "40%" }} />
           <ProgressBar percent="0%" />
-          <Next link="etat-du-bien" name="Suivant" />
+          <Next link="etat-du-bien" name="Suivant" color="#ff9e23" />
         </div>
       )}
     </div>

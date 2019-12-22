@@ -14,9 +14,8 @@ import Stamp from "../../img/stamp.png";
 
 export default function Coordonnees() {
   const [checkbox, setCheckbox] = useState(false);
+  Cookies.set("check", checkbox);
   const [email, setEmail] = useState("");
-  console.log(email);
-  console.log(checkbox);
 
   return (
     <div className="wrapper">
@@ -50,6 +49,7 @@ export default function Coordonnees() {
                 className="emailInput"
                 onChange={event => {
                   setEmail(event.target.value);
+                  Cookies.set("email", event.target.value);
                 }}
               />
             </div>
@@ -73,19 +73,23 @@ export default function Coordonnees() {
             </span>
           </div>
         </label>
-        <input type="submit" />
 
-        {Cookies.get("etat-du-bien") === "" ? (
+        {checkbox === false ? (
           <div className="buttOfEmail">
             <Back link="montant-de-projet" />
             <ProgressBar percent="84%" />
-            <Next name="Valider" type="submit" />
+            <Next name="Valider" type="submit" color="rgba(192,192,192,0.3)" />
           </div>
         ) : (
           <div className="buttOfEmail">
             <Back link="montant-de-projet" />
             <ProgressBar percent="84%" />
-            <Next name="Valider" link="formulaire-termine" type="submit" />
+            <Next
+              name="Valider"
+              link="formulaire-termine"
+              type="submit"
+              color="#ff9e23"
+            />
           </div>
         )}
       </form>

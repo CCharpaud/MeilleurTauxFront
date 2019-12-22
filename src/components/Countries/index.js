@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Cookies from "js-cookie";
 
 /* Style */
@@ -11,12 +11,15 @@ import Information from "../../components/Information";
 /* Svg Import */
 import { UnfoldMore } from "@material-ui/icons";
 
+// // first initialization of cookies for ternary
+// Cookies.set("situation-du-bien-pays");
+
 export default function Countries() {
   const [countries, setCountries] = useState("");
-  Cookies.set("situation-du-bien-pays", countries);
 
   const handleChangeCountries = event => {
     setCountries(event.target.value);
+    Cookies.set("situation-du-bien-pays", event.target.value);
   };
 
   return (

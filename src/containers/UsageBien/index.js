@@ -55,13 +55,13 @@ export default function UsageBien() {
         <div className="buttOfUse">
           <Back link="etat-du-bien" />
           <ProgressBar percent="28%" />
-          <Next name="Suivant" />
+          <Next name="Suivant" color="rgba(192,192,192,0.3)" />
         </div>
       ) : (
         <div className="buttOfUse">
           <Back link="etat-du-bien" />
           <ProgressBar percent="28%" />
-          <Next link="situation-actuelle" name="Suivant" />
+          <Next link="situation-actuelle" name="Suivant" color="#ff9e23" />
         </div>
       )}
     </div>

@@ -8,7 +8,7 @@ export default function Next(props) {
     <div className="wrapper">
       <div className="containOfNext">
         <Link to={props.link}>
-          <div className="buttOfNext">
+          <div className="buttOfNext" style={{ backgroundColor: props.color }}>
             <li> {props.name} </li>
           </div>
         </Link>

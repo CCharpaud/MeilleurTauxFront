@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Cookies from "js-cookie";
 
 /* Style */
@@ -20,18 +20,18 @@ export default function Montant() {
       <div className="containOfAmount">
         <Amount />
       </div>
-      {Cookies.get("montant-client") === "undefined" ? (
+      {/* {Cookies.get("montant-client") === "undefined" ? (
         <div className="buttOfBudget">
           <Back link="ou-se-situe-le-bien" />
           <ProgressBar percent="70%" />
-          <Next name="Suivant" />
+          <Next name="Suivant" color="rgba(192,192,192,0.3)" />
         </div>
-      ) : (
-        <div className="buttOfBudget">
-          <Back link="ou-se-situe-le-bien" />
-          <ProgressBar percent="70%" />
-          <Next link="coordonnées" name="Suivant" />
-        </div>
+      ) : ( */}
+      <div className="buttOfBudget">
+        <Back link="ou-se-situe-le-bien" />
+        <ProgressBar percent="70%" />
+        <Next link="coordonnées" name="Suivant" color="#ff9e23" />
+      </div>
       )}
     </div>
   );

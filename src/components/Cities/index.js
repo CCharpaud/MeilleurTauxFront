@@ -14,6 +14,9 @@ export default function Cities() {
   const [data, setData] = useState();
   const [handleText, setHandleText] = useState("");
 
+  /* Section of save Cookie */
+  Cookies.set("situation-du-bien-ville", handleText);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -68,7 +71,7 @@ export default function Cities() {
                         value={handleText}
                         onClick={() => {
                           setHandleText(item.city + "-" + item.code);
-                          Cookies.set("situation-du-bien-ville", item.city);
+                          Cookies.set("situation-du-bien-ville", item.code);
                         }}
                         key={index}
                       >

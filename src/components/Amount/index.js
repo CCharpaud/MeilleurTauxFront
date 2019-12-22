@@ -9,7 +9,7 @@ import "../../App.css";
 import Information from "../../components/Information";
 
 export default function Amount() {
-  const [acquisitionAmount, setAcquisitionAmount] = useState();
+  const [acquisitionAmount, setAcquisitionAmount] = useState(0);
   const [workAmount, setWorkAmount] = useState(0);
 
   const totalNew =

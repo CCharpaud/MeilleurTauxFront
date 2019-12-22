@@ -21,3 +21,21 @@
   margin-top: 200px;
   margin-bottom: 100px;
 }
+
+/* Info Bulle */
+
+.infobulle {
+  position: relative;
+  cursor: help;
+}
+
+.infobulle:hover::after,
+.infobulle:focus::after {
+  content: attr(aria-label); /* on affiche aria-label */
+  position: absolute;
+  top: -2.4em;
+  left: 50%;
+  transform: translateX(-50%); /* on centre horizontalement  */
+  z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
+  white-space: nowrap; /* on interdit le retour à la ligne */
+}

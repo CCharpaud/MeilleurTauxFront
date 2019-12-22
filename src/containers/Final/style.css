@@ -11,3 +11,12 @@ footer span {
 .containOfFinal {
   padding-bottom: 40px;
 }
+
+.containOfFinal {
+  font-size: 25px;
+}
+
+.numberOfQuotation {
+  font-size: 30px;
+  font-weight: bold;
+}

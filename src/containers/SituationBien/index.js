@@ -14,9 +14,6 @@ import Cities from "../../components/Cities";
 import Countries from "../../components/Countries";
 import Title from "../../components/Title";
 
-/* Svg Import */
-import { UnfoldMore } from "@material-ui/icons";
-
 export default function SituationBien() {
   return (
     <div className="wrapper">
@@ -25,19 +22,18 @@ export default function SituationBien() {
       </div>
       <Countries />
       <Cities />
-
-      {Cookies.get("situation-du-bien-pays") === undefined ? (
+      {/* {Cookies.get("situation-du-bien-ville") === "" ? (
         <div className="buttOfSituationLoc">
           <Back link="situation-actuelle" />
           <ProgressBar percent="56%" />
-          <Next name="Suivant" />
+          <Next name="Suivant" color="rgba(192,192,192,0.3)" />
         </div>
-      ) : (
-        <div className="buttOfSituationLoc">
-          <Back link="situation-actuelle" />
-          <ProgressBar percent="56%" />
-          <Next link="montant-de-projet" name="Suivant" />
-        </div>
+      ) : ( */}
+      <div className="buttOfSituationLoc">
+        <Back link="situation-actuelle" />
+        <ProgressBar percent="56%" />
+        <Next link="montant-de-projet" name="Suivant" color="#ff9e23" />
+      </div>
       )}
     </div>
   );

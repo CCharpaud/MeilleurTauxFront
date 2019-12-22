@@ -63,13 +63,13 @@ export default function SituationActuelle() {
         <div className="buttOfSituation">
           <Back link="usage-du-bien" />
           <ProgressBar percent="42%" />
-          <Next name="Suivant" />
+          <Next name="Suivant" color="rgba(192,192,192,0.3)" />
         </div>
       ) : (
         <div className="buttOfSituation">
           <Back link="usage-du-bien" />
           <ProgressBar percent="42%" />
-          <Next link="ou-se-situe-le-bien" name="Suivant" />
+          <Next link="ou-se-situe-le-bien" name="Suivant" color="#ff9e23" />
         </div>
       )}
     </div>
